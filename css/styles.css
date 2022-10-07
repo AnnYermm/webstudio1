@@ -14,13 +14,42 @@ body {
    
 }
 
-footer {
-    background-color: red ;
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none ;
 }
 
 button {
     cursor: pointer;
     font-family: 'Roboto', inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .web-logo {
@@ -29,10 +58,6 @@ button {
 
 .list-punkt .current {
     color: var(--accent-color);
-}
-
-.list-punkt {
-    list-style-type: none;
 }
 
 .menu {
@@ -212,9 +237,6 @@ button {
 .address-street:hover,
 .address-street:focus {
     color: var(--accent-color);
-}
-.address-format {
-    font-style: normal;
 }
 
 .project-name-link {
