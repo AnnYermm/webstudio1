@@ -45,11 +45,20 @@ address {
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .web-logo {
@@ -66,9 +75,7 @@ address {
     letter-spacing: 0.02em;
 }
 
-.nav-container {
-    width: 294px;
-}
+
 
 .logo {
     font-family: 'Raleway';
@@ -110,21 +117,29 @@ address {
 .contact-link:focus {
     color: var(--accent-color);
 }
-/*
+
 .solutions {
     background-color: var(--contrast-color);
     
 }
-*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.solutions-container{
+    padding: 192px 252px 198px;
+}
+
 .solutions-text {
     text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /*color: var(--accent-text-color);*/
+    color: var(--accent-text-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
 }
 
 .button-order {
@@ -137,7 +152,9 @@ address {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-
+    margin: 30px;
+    display: block;
+    margin: 30px auto;
 }
 
 .button-order:hover ,
@@ -168,6 +185,8 @@ address {
     display: none;
  }
 
+
+
  .description-heading {
     font-weight: 700;
     font-size: 14px;
@@ -175,10 +194,16 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;   
  }
+
+.photos-gal {
+    padding-top: 50px;
+}
+
  .description-text {
     font-size: 14px;
     line-height: 1.7;
     color: var(--cover-text-color);
+    padding-top: 10px;
  }
  
 
@@ -189,6 +214,11 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
  }
+
+ .photos-gal1{
+    padding-top: 50px;
+ }
+
  /*
  .command-block {
     background-color: #F5F4FA;
@@ -207,16 +237,20 @@ address {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    padding-top: 30px;
 }
 .post-name {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--cover-text-color);
+    padding-top: 10px;
 }
 
 .footer {
     background-color: var(--contrast-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
