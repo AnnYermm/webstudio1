@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,12 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
+      <div class="container">
         <a href="./index.html" class="logo link"
           ><span class="web-logo">Web</span>Studio</a
         >
-        <ul class="list-punkt">
+        <nav  class="menu">
+        <ul class="list-punkt nav-menu">
           <li class="menu-item">
             <a href="./index.html" class="link header-navigation">Студия</a>
           </li>
@@ -33,8 +35,9 @@
           </li>
         </ul>
       </nav>
-      <ul class="list-punkt">
-        <li>
+      <div class="contact-block">
+      <ul class="list-punkt contact-info">
+        <li class="contact-item">
           <a href="mailto:info@devstudio.com" class="link contact-link"
             >info@devstudio.com</a
           >
@@ -45,19 +48,24 @@
           >
         </li>
       </ul>
+      </div>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="section">
+        <div class="container">
         <h1 class="secret-heading">Кнопки</h1>
-        <ul class="list-punkt">
-          <li><button type="button" class="button">Все</button></li>
-          <li><button type="button" class="button">Веб-сайты</button></li>
-          <li><button type="button" class="button">Приложения</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
+        <ul class="list-punkt btn-list">
+          <li class="btn-item"><button type="button" class="button btn-portfolio">Все</button></li>
+          <li class="btn-item"><button type="button" class="button btn-portfolio">Веб-сайты</button></li>
+          <li class="btn-item"><button type="button" class="button btn-portfolio">Приложения</button></li>
+          <li class="btn-item"><button type="button" class="button btn-portfolio">Дизайн</button></li>
+          <li class="btn-item"><button type="button" class="button btn-portfolio">Маркетинг</button></li>
         </ul>
+        </div>
+          <div class="container">
         <h2 class="secret-heading">Галлерея</h2>
-        <ul class="list-punkt">
+        <ul class="list-punkt portfolio-gal">
           <li class="gallery-block">
             <a href="#" class="link project-name-link"><img src="./images/p1.jpg" alt="Вид сайта технокряк" width="370" />
             <h3 class="project-name">Технокряк</h3>
@@ -120,13 +128,14 @@
             <p class="project-description">Приложение</p></a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="logo-footer link"><span class="web-logo">Web</span>Studio</a>
-      <address class="address-format">
-        <ul class="list-punkt">
-          <li>
+      <div class="container">
+      <a href="./index.html" class="logo-footer link"
+        ><span class="web-logo">Web</span>Studio</a>
+      <address class="address">
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
@@ -134,11 +143,20 @@
               class="link address-street"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
+          </address>
+          <ul class="list-punkt">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link contact-link email"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="mailto:info@devstudio.com" class="link contact-link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link contact-link">+38 096 111 11 11</a></li>
+          <li>
+            <a href="tel:+380961111111" class="link contact-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </address>
+      </div>
     </footer>
   </body>
 </html>
