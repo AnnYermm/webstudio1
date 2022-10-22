@@ -126,7 +126,7 @@ img {
 
 .contact-link {
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center; 
     gap: 10px;
     font-size: 14px;
@@ -165,7 +165,7 @@ img {
 .solutions {
     /*background-color: var(--contrast-color);*/
     background-color: rgba(47, 48, 58, 0.4);
-    min-width: 1600px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.6)) ,
     url(../images/bg1.jpg);
@@ -238,6 +238,21 @@ img {
     gap: 30px;
 }
 
+.qualities-icon {
+    display: inline-block;
+}
+
+.qualities-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    background-color: #F5F4FA;
+    min-width: 270px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
  .description-heading {
     font-weight: 700;
     font-size: 14px;
@@ -279,9 +294,6 @@ img {
  .container > .photos-gal1 {
     display: flex;
  }
-
-
-
 
  .command-block {
     background-color: #F5F4FA;
@@ -330,6 +342,36 @@ img {
   height: 44px;
 }
 
+.client-list {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.client-icon {
+    fill: var(--svg-color);
+    display: inline-block;
+}
+
+.client-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item:hover ,
+.client-item:focus {
+    border: 1px solid #2196F3;
+}
+
+.client-box:hover .client-icon,
+.client-box:focus .client-icon {
+    fill: var(--accent-color);
+}
 
 .social-icon {
     fill: var(--svg-color);
@@ -421,17 +463,14 @@ img {
     gap: 30px;
 }
 
-.gallery-block {
-    width: calc((100% - 60px) / 3);
-}
-
 .gallery-block:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .img-project {
+    height: auto;
     max-width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .btn-portfolio {
@@ -456,7 +495,7 @@ img {
 .gallery-block {
     width: calc((100% - 60px) / 3);
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
 }
 
 .project-name {
