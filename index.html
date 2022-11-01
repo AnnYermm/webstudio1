@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <title>Студія</title>
   </head>
-  <body>
+  <body id="page">
     <header class="header"> 
       <div class="container">
         <a href="./index.html" class="logo link"
@@ -67,7 +67,14 @@
         <div class="container">
           <div class="solutions-container">
         <h1 class="solutions-text">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button-order">Заказать услугу</button>
+        <button class="button-order" type="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button  class="icon-close" type="button"  data-modal-close><svg class="close" width="18px" height="18px">
+            <use href="./images/icons/icomoon/sprite.svg#icon-close"></use>
+          </svg></button>
+      </div>
+    </div>
         </div>
       </div>
       </section>
@@ -130,13 +137,13 @@
         <div class="container">
         <h2 class="basic-heading">Чем мы занимаемся</h2>
         <ul class="photos-gal">
-          <li class="photo-item">
+          <li class="photo-item" data-text="Десктопные приложения">
             <img src="./images/box1.jpg" alt="робочий стіл" width="370" />
           </li>
-          <li class="photo-item">
+          <li class="photo-item"  data-text="Мобильные приложения">
             <img src="./images/box2.jpg" alt="телефон у долонях" width="370" />
           </li>
-          <li class="photo-item">
+          <li class="photo-item"  data-text="Дизайнерские решения">
             <img src="./images/box3.jpg" alt="графічний планшет" width="370" />
           </li>
         </ul>
@@ -350,5 +357,8 @@
         </div>
       </div>
     </footer>
+    <!--Modal window-->
+    
+    <script src="./js/modal.js"></script>
   </body>
 </html>
