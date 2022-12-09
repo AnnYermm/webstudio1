@@ -70,6 +70,42 @@
         <button class="button-order" type="button" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <!--Form-->
+        <form class="form" name="order-form">
+          <p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="block-form-contacts" role="group">
+            <label class="contacts-form-field">
+              <span class="contacts-form-lable">Имя</span>
+              <svg class="label-icon" width="18px" height="18px">
+                  <use href="./images/icons/icomoon/sprite.svg#icon-person-black-icon"></use>
+                </svg>
+              <input class="contacts-form-input" type="text" name="user-name" minlength="2" required/>
+            </label>
+            <label class="contacts-form-field">
+              <span class="contacts-form-lable">Телефон</span>
+              <svg class="label-icon" width="18px" height="18px">
+                  <use href="./images/icons/icomoon/sprite.svg#icon-phone-black-icon"></use>
+              </svg>
+              <input class="contacts-form-input" type="tel" name="user-phone"  required/>
+            </label>
+            <label class="contacts-form-field">
+              <span class="contacts-form-lable">Почта</span>
+              <svg class="label-icon" width="18px" height="18px">
+                  <use href="./images/icons/icomoon/sprite.svg#icon-email-black-icon"></use>
+                </svg>
+              <input class="contacts-form-input" type="email" name="user-email"/>
+            </label>
+            <label class="contacts-form-field">
+              <span class="contacts-form-lable">Комментарий</span>
+              <textarea class="contacts-form-massage-textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+            </label>
+            </div>
+            <label class="form-agreement-label">
+              <input class="checkbox" type="checkbox" required>
+              <span class="contacts-form-lable">Соглашаюсь с рассылкой и принимаю Условия договора</span>
+            </label>
+            <button class="btn-send button" type="submit">Отправить</button>
+        </form>
         <button  class="icon-close" type="button"  data-modal-close><svg class="close" width="18px" height="18px">
             <use href="./images/icons/icomoon/sprite.svg#icon-close"></use>
           </svg></button>

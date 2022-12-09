@@ -673,7 +673,7 @@ img {
 .social-link-footer:focus .social-icon-footer{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   fill: var(--accent-text-color);
+    fill: var(--accent-text-color);
 }
 
 .icon-close {
@@ -724,3 +724,116 @@ img {
     visibility: hidden;
     pointer-events: none;
 }
+
+.form-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}  
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+
+    width: 448px;
+    margin: 0 auto;
+    /*outline: 1px solid #188ce8;*/
+}
+
+.block-form-contacts {
+    margin-top: 12px;
+    flex-direction: column;
+
+}
+
+.contacts-form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 448px;
+}
+
+
+.contacts-form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.contacts-form-input:focus {
+    border-color:#188ce8;
+}
+
+.label-icon {
+   position: relative;
+   top: 0;
+   left: 0; 
+}
+
+.form-agreement-label {
+    display: block;
+    margin-top: 20px;
+}
+
+.btn-send {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
+    
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.form-agreement-label {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contacts-form-lable {
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+
+.checkbox {
+    /*background-color: #000000;*/
+}
+
+.contacts-form-massage-textarea {
+    resize: none;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 16px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+    letter-spacing: 0.01em;
+    
+    color: rgb(136, 132, 132);
+}
+
