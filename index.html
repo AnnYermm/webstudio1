@@ -76,24 +76,29 @@
           <div class="block-form-contacts" role="group">
             <label class="contacts-form-field">
               <span class="contacts-form-lable">Имя</span>
-              <svg class="label-icon" width="18px" height="18px">
+              <input class="contacts-form-input" type="text" name="user-name" minlength="2" required/>
+            <svg class="label-icon" width="18px" height="18px">
                   <use href="./images/icons/icomoon/sprite.svg#icon-person-black-icon"></use>
                 </svg>
-              <input class="contacts-form-input" type="text" name="user-name" minlength="2" required/>
+                <svg class="icon-alert" width="18px" height="18px">
+                   <use class="icon-warning" href="./images/icons/icomoon/sprite.svg#icon-notification"></use>
+                  <use class="icon-check" href="./images/icons/icomoon/sprite.svg#icon-checkmark"></use>
+                </svg>
+                <span class="massage-warning">Минимальная длина 2 символа</span>
             </label>
             <label class="contacts-form-field">
               <span class="contacts-form-lable">Телефон</span>
-              <svg class="label-icon" width="18px" height="18px">
+              <input class="contacts-form-input" id="phone" type="tel" name="user-phone"  required/>
+            <svg class="label-icon" width="18px" height="18px">
                   <use href="./images/icons/icomoon/sprite.svg#icon-phone-black-icon"></use>
               </svg>
-              <input class="contacts-form-input" type="tel" name="user-phone"  required/>
             </label>
             <label class="contacts-form-field">
               <span class="contacts-form-lable">Почта</span>
-              <svg class="label-icon" width="18px" height="18px">
+              <input class="contacts-form-input"  type="email" name="user-email"/>
+            <svg class="label-icon" width="18px" height="18px">
                   <use href="./images/icons/icomoon/sprite.svg#icon-email-black-icon"></use>
                 </svg>
-              <input class="contacts-form-input" type="email" name="user-email"/>
             </label>
             <label class="contacts-form-field">
               <span class="contacts-form-lable">Комментарий</span>
@@ -101,8 +106,13 @@
             </label>
             </div>
             <label class="form-agreement-label">
-              <input class="checkbox" type="checkbox" required>
-              <span class="contacts-form-lable">Соглашаюсь с рассылкой и принимаю Условия договора</span>
+              <input class="checkbox visually-hidden" type="checkbox" required>
+              <span class="custom-checkbox">
+                <svg class="custom-icon" width="13px" height="12px">
+                  <use href="./images/icons/icomoon/sprite.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              <span class="contacts-form-lable agreement-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="link-deal">Условия договора</a></span>
             </label>
             <button class="btn-send button" type="submit">Отправить</button>
         </form>
@@ -391,10 +401,28 @@
               </a></li>
             </ul>
         </div>
+        <div class="footer-form-container">
+          <form class="footer-form">
+            <p class="connect-footer">подпишитесь на рассылку</p>
+          <label>
+    <input class="footer-input" type="email" name="email" placeholder="E-mail">
+  </label>
+  </form>
+  <button class="btn-send button footer-btn" type="button">
+    <span>Подписаться</span>
+    <svg class="social-icon-footer" width="24px" height="24px">
+      <use href="./images/icons/icomoon/sprite.svg#icon-send"></use>
+    </svg>
+  </button>
+        </div>
       </div>
     </footer>
     <!--Modal window-->
-    
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
+    <script src="./js/mask.js"></script>
+
+
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
