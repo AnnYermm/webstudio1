@@ -11,7 +11,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,34 +23,43 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>portfolio</title>
   </head>
   <body>
     <header class="header header-prtf">
       <div class="container">
-        <a href="./index.html" class="logo link"
+        <a href="./index.html" class="logo link header__logo"
           ><span class="web-logo">Web</span>Studio</a
         >
-        <nav class="menu">
-          <ul class="list-punkt nav-menu">
-            <li class="menu-item">
-              <a href="./index.html" class="link header-navigation">Студия</a>
+        <nav class="header__menu">
+          <ul class="list-punkt header__nav-menu">
+            <li class="header__menu-item">
+              <a
+                href="./index.html"
+                class="link header__menu-link header__menu-link"
+                >Студия</a
+              >
             </li>
-            <li class="menu-item">
-              <a href="./portfolio.html" class="link header-navigation current"
+            <li class="header__menu-item">
+              <a href="./portfolio.html" class="link header__menu-link--current"
                 >Портфолио</a
               >
             </li>
-            <li class="menu-item">
-              <a href="#" class="link header-navigation">Контакты</a>
+            <li class="header__menu-item">
+              <a href="#" class="link header__menu-link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="contact-block">
-          <ul class="list-punkt contact-info">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="link contact-link">
-                <svg class="contact-icon" width="16px" height="12px">
+        <div class="contact-block header__contact-block">
+          <ul class="list-punkt header__info-list">
+            <li class="header__contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link header__connect contact-link"
+              >
+                <svg class="header__connect-icon" width="16px" height="12px">
                   <use
                     href="./images/icons/icomoon/sprite.svg#icon-envelope"
                   ></use>
@@ -60,8 +68,11 @@
               >
             </li>
             <li>
-              <a href="tel:+380961111111" class="link contact-link">
-                <svg class="contact-icon" width="10px" height="16px">
+              <a
+                href="tel:+380961111111"
+                class="link header__connect contact-link header__tel"
+              >
+                <svg class="header__connect-icon" width="10px" height="16px">
                   <use
                     href="./images/icons/icomoon/sprite.svg#icon-smartphone"
                   ></use>
@@ -78,23 +89,23 @@
         <div class="container">
           <h1 class="secret-heading">Кнопки</h1>
           <ul class="list-punkt btn-list">
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button type="button" class="button btn-portfolio">Все</button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button type="button" class="button btn-portfolio">
                 Веб-сайты
               </button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button type="button" class="button btn-portfolio">
                 Приложения
               </button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button type="button" class="button btn-portfolio">Дизайн</button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button type="button" class="button btn-portfolio">
                 Маркетинг
               </button>
@@ -104,17 +115,17 @@
         <div class="container">
           <h2 class="secret-heading">Галлерея</h2>
           <ul class="list-punkt portfolio-gal">
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link">
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link">
                 <div class="overlay">
                   <img
-                    class="img-project"
+                    class="portfolio-gal__img"
                     src="./images/p1.jpg"
                     alt="Вид сайта технокряк"
                     width="370"
                   />
-                  <div class="project-work-description">
-                    <p class="work-description">
+                  <div class="overlay__box">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -122,21 +133,21 @@
                     </p>
                   </div>
                 </div>
-                <h3 class="project-name">Технокряк</h3>
-                <p class="project-description">Веб-сайт</p></a
+                <h3 class="portfolio-gal__block-name">Технокряк</h3>
+                <p class="portfolio-gal__block-dscr">Веб-сайт</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><div class="overlay">
                   <img
-                    class="img-project"
+                    class="portfolio-gal__img"
                     src="./images/p2.jpg"
                     alt="Вид сайта технокряк"
                     width="370"
                   />
-                  <div class="project-work-description">
-                    <p class="work-description">
+                  <div class="overlay__box">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -145,21 +156,23 @@
                   </div>
                 </div>
 
-                <h3 class="project-name">Постер New Orlean vs Golden Star</h3>
-                <p class="project-description">Дизайн</p></a
+                <h3 class="portfolio-gal__block-name">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="portfolio-gal__block-dscr">Дизайн</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><div class="overlay">
                   <img
-                    class="img-project"
+                    class="portfolio-gal__img"
                     src="./images/p3.jpg"
                     alt="Вид сайта технокряк"
                     width="370"
                   />
-                  <div class="project-work-description">
-                    <p class="work-description">
+                  <div class="overlay__box">
+                    <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -168,79 +181,83 @@
                   </div>
                 </div>
 
-                <h3 class="project-name">Ресторан Seafood</h3>
-                <p class="project-description">Приложение</p></a
+                <h3 class="portfolio-gal__block-name">Ресторан Seafood</h3>
+                <p class="portfolio-gal__block-dscr">Приложение</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><img
-                  class="img-project"
+                  class="portfolio-gal__img"
                   src="./images/p4.jpg"
                   alt="Наушники"
                   width="370"
                 />
 
-                <h3 class="project-name">Проект Prime</h3>
-                <p class="project-description">Маркетинг</p></a
+                <h3 class="portfolio-gal__block-name">Проект Prime</h3>
+                <p class="portfolio-gal__block-dscr">Маркетинг</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><img
-                  class="img-project"
+                  class="portfolio-gal__img"
                   src="./images/p5.jpg"
                   alt="Коробки"
                   width="370"
                 />
-                <h3 class="project-name">Проект Boxes</h3>
-                <p class="project-description">Приложение</p></a
+                <h3 class="portfolio-gal__block-name">Проект Boxes</h3>
+                <p class="portfolio-gal__block-dscr">Приложение</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><img
-                  class="img-project"
+                  class="portfolio-gal__img"
                   src="./images/p6.jpg"
                   alt="Вид сайта"
                   width="370"
                 />
-                <h3 class="project-name">Inspiration has no Borders</h3>
-                <p class="project-description">Веб-сайт</p></a
+                <h3 class="portfolio-gal__block-name">
+                  Inspiration has no Borders
+                </h3>
+                <p class="portfolio-gal__block-dscr">Веб-сайт</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><img src="./images/p7.jpg" alt="Журнал" width="370" />
 
-                <h3 class="project-name">Издание Limited Edition</h3>
-                <p class="project-description">Дизайн</p></a
+                <h3 class="portfolio-gal__block-name">
+                  Издание Limited Edition
+                </h3>
+                <p class="portfolio-gal__block-dscr">Дизайн</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><img
-                  class="img-project"
+                  class="portfolio-gal__img"
                   src="./images/p8.jpg"
                   alt="Бирка"
                   width="370"
                 />
 
-                <h3 class="project-name">Проект LAB</h3>
-                <p class="project-description">Маркетинг</p></a
+                <h3 class="portfolio-gal__block-name">Проект LAB</h3>
+                <p class="portfolio-gal__block-dscr">Маркетинг</p></a
               >
             </li>
-            <li class="gallery-block">
-              <a href="#" class="link project-name-link"
+            <li class="portfolio-gal__block">
+              <a href="#" class="link portfolio-gal__link"
                 ><img
-                  class="img-project"
+                  class="portfolio-gal__img"
                   src="./images/p9.jpg"
                   alt="Роботник за ноутбуком"
                   width="370"
                 />
 
-                <h3 class="project-name">Growing Business</h3>
-                <p class="project-description">Приложение</p></a
+                <h3 class="portfolio-gal__block-name">Growing Business</h3>
+                <p class="portfolio-gal__block-dscr">Приложение</p></a
               >
             </li>
           </ul>
@@ -248,17 +265,17 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-info">
+      <div class="container footer__info">
         <div>
-          <a href="./index.html" class="logo-footer link"
+          <a href="./index.html" class="footer__logo link"
             ><span class="web-logo">Web</span>Studio</a
           >
-          <address class="address">
+          <address class="footer__address">
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer"
-              class="link address-street"
+              class="link footer__address-street"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </address>
@@ -266,7 +283,7 @@
             <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="link contact-link email"
+                class="link contact-link footer__email"
                 >info@devstudio.com</a
               >
             </li>
@@ -277,39 +294,39 @@
             </li>
           </ul>
         </div>
-        <div class="footer-social-media">
+        <div class="footer__medias">
           <p class="connect-footer">присоединяйтесь</p>
-          <ul class="social-list-footer">
-            <li class="social-item">
-              <a href="" class="social-link-footer">
-                <svg class="social-icon-footer" width="20px" height="20px">
+          <ul class="footer__medias-list">
+            <li class="footer__medias-item">
+              <a href="" class="footer__medias-link">
+                <svg class="footer__medias-icon" width="20px" height="20px">
                   <use
                     href="./images/icons/icomoon/sprite.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link-footer">
-                <svg class="social-icon-footer" width="20px" height="20px">
+            <li class="footer__medias-item">
+              <a href="" class="footer__medias-link">
+                <svg class="footer__medias-icon" width="20px" height="20px">
                   <use
                     href="./images/icons/icomoon/sprite.svg#icon-twitter"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link-footer">
-                <svg class="social-icon-footer" width="20px" height="20px">
+            <li class="footer__medias-item">
+              <a href="" class="footer__medias-link">
+                <svg class="footer__medias-icon" width="20px" height="20px">
                   <use
                     href="./images/icons/icomoon/sprite.svg#icon-facebook"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link-footer">
-                <svg class="social-icon-footer" width="20px" height="20px">
+            <li class="footer__medias-item">
+              <a href="" class="footer__medias-link">
+                <svg class="footer__medias-icon" width="20px" height="20px">
                   <use
                     href="./images/icons/icomoon/sprite.svg#icon-linkedin"
                   ></use>
@@ -318,19 +335,24 @@
             </li>
           </ul>
         </div>
-         <div class="footer-form-container">
-          <form class="footer-form">
+        <div class="footer__form-container">
+          <form class="footer__form">
             <p class="connect-footer">подпишитесь на рассылку</p>
-          <label>
-    <input class="footer-input" type="email" name="email" placeholder="E-mail">
-  </label>
-  </form>
-  <button class="btn-send button footer-btn" type="button">
-    <span>Подписаться</span>
-    <svg class="social-icon-footer" width="24px" height="24px">
-      <use href="./images/icons/icomoon/sprite.svg#icon-send"></use>
-    </svg>
-  </button>
+            <label>
+              <input
+                class="footer__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+          </form>
+          <button class="btn-send button footer__btn" type="button">
+            <span>Подписаться</span>
+            <svg class="footer__social-icon" width="24px" height="24px">
+              <use href="./images/icons/icomoon/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>

@@ -1,0 +1,18 @@
+.custom-checkbox {
+    display: inline-flex;
+
+    width: 16px;
+    height: 15px;
+
+    border: 1px solid #212121;
+    border-radius: 2px;
+}
+
+.custom-icon {
+    fill: #FFFFFF;
+}
+
+.checkbox:checked+.custom-checkbox {
+    border: 1px solid #2196F3;
+    background-color: #2196F3;
+}

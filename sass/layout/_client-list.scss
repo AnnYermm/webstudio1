@@ -1,0 +1,35 @@
+.client-list {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.client-list__icon {
+    fill: currentColor;
+    display: inline-block;
+
+}
+
+.client-list__box {
+    color: currentColor;
+}
+
+.client-list__item {
+    color: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-list__item:hover ,
+.client-list__item:focus {
+    border: 1px solid #2196F3;
+    color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
