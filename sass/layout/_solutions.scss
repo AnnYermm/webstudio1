@@ -1,15 +1,68 @@
 .solutions {
-    /*background-color: var(--contrast-color);*/
+    background-repeat: no-repeat;
     background-color: rgba(47, 48, 58, 0.4);
-    max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.6)),
-        url(../images/bg1.jpg);
     background-size: cover;
+    background-position: center;
+
+    width: 100%;
+ 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.6)),
+            url(../images/adaptive/mob-bg.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.6)),
+                    url(../images/adaptive/mob-bg@2x.png);
+        }
+
+            //breakpoint tablet
+            @media screen and (min-width: 768px) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.6)),
+                        url(../images/adaptive/tab-bg.png);
+
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.6)),
+                            url(../images/adaptive/tab-bg@2x.png);
+                    }
+            }
+
+            //breakpoint desktop
+            @media screen and (min-width: 1200px) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.6)),
+                        url(../images/adaptive/desk-bg.jpg);
+
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.6)),
+                            url(../images/adaptive/desk-bg@2x.png);
+                    }
+            }
 }
 
 .solutions__container {
-    padding: 192px 250px 198px;
+        //breakpoint mobile
+        @media screen and (min-width: 480px) {
+            padding: 118px 45px;
+        }
+    
+    //breakpoint tablet
+        @media screen and (min-width: 768px) {
+           padding: 118px 188px;
+        }
+    
+    
+    //breakpoint desktop
+        @media screen and (min-width: 1200px) {
+            padding: 192px 250px 198px;
+        }
 }
 
 .solutions__button {

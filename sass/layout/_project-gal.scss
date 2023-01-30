@@ -2,15 +2,31 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
 }
 
 .portfolio-gal__block {
-    width: calc((100% - 60px) / 3);
     height: 404px;
     background: #FFFFFF;
     outline: 1px solid #EEEEEE;
     position: relative;
     overflow: hidden;
+
+        //breakpoint mobile
+            @media screen and (min-width: 480px) {
+                width: 450px;
+            }
+        
+            //breakpoint tablet
+            @media screen and (min-width: 768px) {
+                width: 354px;
+            }
+        
+        
+            //breakpoint desktop
+            @media screen and (min-width: 1200px) {
+                width: 370px;
+            }
 
     &:hover {
             transition-duration: 250ms;
@@ -26,6 +42,12 @@
 .portfolio-gal__link {
     color: var(--main-text-color);
 
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+
     &:hover,
         &:focus {
             transition-duration: 250ms;
@@ -35,8 +57,12 @@
 }
 
 .portfolio-gal__img {
+    display: block;
     height: auto;
     max-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 .portfolio-gal__block-name {
@@ -48,6 +74,8 @@
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 4px;
+
+    flex-grow: 1;
 }
 
 .portfolio-gal__block-dscr {
@@ -59,6 +87,7 @@
     padding-left: 24px;
     padding-bottom: 20px;
 
+    flex-grow: 1;
 }
 
 

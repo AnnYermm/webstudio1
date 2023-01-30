@@ -1,0 +1,139 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+
+   padding-top: 48px;
+   padding-left: 40px;
+   padding-bottom: 48px;
+
+    //breakpoint tablet
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+
+    //breakpoint desktop
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.menu-btn {
+    margin-left: auto;
+
+    background-color: transparent;
+    border: none;
+
+    &.is-open {
+        position: relative;
+        z-index: 100;
+    }
+
+        //breakpoint tablet
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    
+    
+        //breakpoint desktop
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+}
+
+.menu-open-icon {
+    opacity: 1;
+
+    .menu-btn.is-open &  {
+        opacity: 0;
+    }
+}
+
+.menu-close-icon {
+    opacity: 0;
+    
+    .menu-btn.is-open & {
+        opacity: 1;
+        position: fixed;
+    }
+}
+
+.menu-section {
+    margin-bottom: auto;
+}
+
+.menu-section__item:not(:first-child) {
+    margin-top: 32px;
+}
+
+.menu-section__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+// .menu-group {
+    
+// }
+
+.menu-group__connect {
+    display: inline-block;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+
+        transform: scale(1.5) translate(35px);
+        transition-duration: 700ms;
+    }
+}
+
+.menu-group__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-socials {
+    margin-top: 64px;
+}
+
+.menu-socials__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+
+    padding-right: 10px;
+}
+
+.menu-socials__link:not(:first-child) {
+    padding-left: 10px;
+}
+
+.menu-socials__link:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}

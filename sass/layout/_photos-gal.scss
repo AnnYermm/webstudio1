@@ -1,3 +1,24 @@
+ .goal-section {
+    //breakpoint mobile
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    //breakpoint tablet
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+
+    //breakpoint desktop
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+ }
+ 
  .photos-gal {
      display: flex;
      padding-top: 50px;
@@ -30,4 +51,6 @@
             justify-content: center;
         }
  }
+
+
 

@@ -33,6 +33,23 @@
         <a href="./index.html" class="logo link header__logo"
           ><span class="web-logo">Web</span>Studio</a
         >
+        <button
+          type="button"
+          class="menu-btn"
+          aria-label="menu button"
+          data-menu-button
+        >
+          <svg width="40px" height="40px">
+            <use
+              class="menu-open-icon"
+              href="./images/icons/icomoon/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-close-icon"
+              href="./images/icons/icomoon/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
         <nav class="header__menu">
           <ul class="list-punkt header__nav-menu">
             <li class="header__menu-item">
@@ -118,12 +135,39 @@
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link">
                 <div class="overlay">
-                  <img
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/adaptive/p1-desk.jpg    1x,
+                        ./images/adaptive/p1-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/adaptive/p1-tab.jpg    1x,
+                        ./images/adaptive/p1-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/adaptive/p1-mob.jpg    1x,
+                        ./images/adaptive/p1-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/adaptive/p1-mob.jpg "
+                      alt="Технокряк"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <!-- <img
                     class="portfolio-gal__img"
                     src="./images/p1.jpg"
                     alt="Вид сайта технокряк"
-                    width="370"
-                  />
+                  /> -->
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -140,12 +184,34 @@
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
                 ><div class="overlay">
-                  <img
-                    class="portfolio-gal__img"
-                    src="./images/p2.jpg"
-                    alt="Вид сайта технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/adaptive/p2-desk.jpg    1x,
+                        ./images/adaptive/p2-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/adaptive/p2-tab.jpg    1x,
+                        ./images/adaptive/p2-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/adaptive/p2-mob.jpg    1x,
+                        ./images/adaptive/p2-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/adaptive/p2-mob.jpg "
+                      alt="Постер New Orlean vs Golden Star"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -165,12 +231,34 @@
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
                 ><div class="overlay">
-                  <img
-                    class="portfolio-gal__img"
-                    src="./images/p3.jpg"
-                    alt="Вид сайта технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/adaptive/p3-desk.jpg    1x,
+                        ./images/adaptive/p3-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/adaptive/p3-tab.jpg    1x,
+                        ./images/adaptive/p3-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/adaptive/p3-mob.jpg    1x,
+                        ./images/adaptive/p3-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/adaptive/p3-mob.jpg "
+                      alt="Ресторан Seafood"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -187,37 +275,102 @@
             </li>
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
-                ><img
-                  class="portfolio-gal__img"
-                  src="./images/p4.jpg"
-                  alt="Наушники"
-                  width="370"
-                />
-
+                ><picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/adaptive/p4-desk.jpg    1x,
+                      ./images/adaptive/p4-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p4-tab.jpg    1x,
+                      ./images/adaptive/p4-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p4-mob.jpg    1x,
+                      ./images/adaptive/p4-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/adaptive/p4-mob.jpg "
+                    alt="Проект Prime"
+                    loading="lazy"
+                  />
+                </picture>
                 <h3 class="portfolio-gal__block-name">Проект Prime</h3>
                 <p class="portfolio-gal__block-dscr">Маркетинг</p></a
               >
             </li>
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
-                ><img
-                  class="portfolio-gal__img"
-                  src="./images/p5.jpg"
-                  alt="Коробки"
-                  width="370"
-                />
+                ><picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/adaptive/p5-desk.jpg    1x,
+                      ./images/adaptive/p5-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p5-tab.jpg    1x,
+                      ./images/adaptive/p5-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p5-mob.jpg    1x,
+                      ./images/adaptive/p5-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/adaptive/p5-mob.jpg "
+                    alt="Проект Boxes"
+                    loading="lazy"
+                  />
+                </picture>
                 <h3 class="portfolio-gal__block-name">Проект Boxes</h3>
                 <p class="portfolio-gal__block-dscr">Приложение</p></a
               >
             </li>
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
-                ><img
-                  class="portfolio-gal__img"
-                  src="./images/p6.jpg"
-                  alt="Вид сайта"
-                  width="370"
-                />
+                ><picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/adaptive/p6-desk.jpg    1x,
+                      ./images/adaptive/p6-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p6-tab.jpg    1x,
+                      ./images/adaptive/p6-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p6-mob.jpg    1x,
+                      ./images/adaptive/p6-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/adaptive/p6-mob.jpg "
+                    alt="Inspiration has no Borders"
+                    loading="lazy"
+                  />
+                </picture>
                 <h3 class="portfolio-gal__block-name">
                   Inspiration has no Borders
                 </h3>
@@ -226,7 +379,34 @@
             </li>
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
-                ><img src="./images/p7.jpg" alt="Журнал" width="370" />
+                ><picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/adaptive/p7-desk.jpg    1x,
+                      ./images/adaptive/p7-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p7-tab.jpg    1x,
+                      ./images/adaptive/p7-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p7-mob.jpg    1x,
+                      ./images/adaptive/p7-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/adaptive/p7-mob.jpg "
+                    alt="Издание Limited Edition"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <h3 class="portfolio-gal__block-name">
                   Издание Limited Edition
@@ -236,12 +416,34 @@
             </li>
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
-                ><img
-                  class="portfolio-gal__img"
-                  src="./images/p8.jpg"
-                  alt="Бирка"
-                  width="370"
-                />
+                ><picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/adaptive/p8-desk.jpg    1x,
+                      ./images/adaptive/p8-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p8-tab.jpg    1x,
+                      ./images/adaptive/p8-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p8-mob.jpg    1x,
+                      ./images/adaptive/p8-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/adaptive/p8-mob.jpg "
+                    alt="Проект LAB"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <h3 class="portfolio-gal__block-name">Проект LAB</h3>
                 <p class="portfolio-gal__block-dscr">Маркетинг</p></a
@@ -249,12 +451,34 @@
             </li>
             <li class="portfolio-gal__block">
               <a href="#" class="link portfolio-gal__link"
-                ><img
-                  class="portfolio-gal__img"
-                  src="./images/p9.jpg"
-                  alt="Роботник за ноутбуком"
-                  width="370"
-                />
+                ><picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/adaptive/p9-desk.jpg    1x,
+                      ./images/adaptive/p9-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p9-tab.jpg    1x,
+                      ./images/adaptive/p9-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="
+                      ./images/adaptive/p9-mob.jpg    1x,
+                      ./images/adaptive/p9-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/adaptive/p9-mob.jpg "
+                    alt="Growing Business"
+                    loading="lazy"
+                  />
+                </picture>
 
                 <h3 class="portfolio-gal__block-name">Growing Business</h3>
                 <p class="portfolio-gal__block-dscr">Приложение</p></a
@@ -266,7 +490,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__info">
-        <div>
+        <div class="footer__address-box">
           <a href="./index.html" class="footer__logo link"
             ><span class="web-logo">Web</span>Studio</a
           >
@@ -356,5 +580,47 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-menu>
+      <div class="menu">
+        <ul class="menu-section">
+          <li class="menu-section__item">
+            <a href="./index.html" class="link menu-section__link">Студия</a>
+          </li>
+          <li class="menu-section__item">
+            <a href="./portfolio.html" class="link menu-section__link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="menu-section__item">
+            <a href="#" class="link menu-section__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="">
+          <ul class="menu-group">
+            <li class="menu-group__item">
+              <a href="tel:+380961111111" class="link menu-group__connect">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-group__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link menu-group__connect"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="menu-socials">
+          <a href="#" class="menu-socials__link link">Instagram</a>
+          <a href="#" class="menu-socials__link link">Twitter</a>
+          <a href="#" class="menu-socials__link link">Facebook</a>
+          <a href="#" class="menu-socials__link link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

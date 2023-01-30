@@ -7,7 +7,23 @@
     position: relative;
     flex-direction: column;
     justify-content: center;
-    width: 448px;
+    
+
+        //breakpoint mobile
+        @media screen and (min-width: 480px) {
+            width: 370px;
+        }
+    
+        //breakpoint tablet
+        @media screen and (min-width: 768px) {
+            width: 370px;
+        }
+    
+    
+        //breakpoint desktop
+        @media screen and (min-width: 1200px) {
+            width: 448px;
+        }
 }
 
 .form-contacts__input:focus:invalid~.massage-warning {

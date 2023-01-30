@@ -1,11 +1,28 @@
 .solutions__text {
     text-align: center;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     color: var(--accent-text-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+        //breakpoint mobile
+            @media screen and (min-width: 480px) {
+                font-size: 26px;
+                line-height: 42px;
+            }
+        
+            //breakpoint tablet
+            @media screen and (min-width: 768px) {
+                font-size: 26px;
+                line-height: 42px;
+            }
+        
+        
+            //breakpoint desktop
+            @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                line-height: 60px;
+            }
 }
 
  .qualities__heading {
@@ -25,10 +42,27 @@
 
    .basic-heading {
        font-weight: 700;
-       font-size: 36px;
-       line-height: 1.2;
        text-align: center;
        letter-spacing: 0.03em;
+
+        //breakpoint mobile
+            @media screen and (min-width: 480px) {
+                font-size: 28px;
+                line-height: 33px;
+            }
+        
+            //breakpoint tablet
+            @media screen and (min-width: 768px) {
+                font-size: 28px;
+                line-height: 33px;
+            }
+        
+        
+            //breakpoint desktop
+            @media screen and (min-width: 1200px) {
+                font-size: 36px;
+                line-height: 1.2;
+            }
    }
 
    .connect-footer {
@@ -52,14 +86,14 @@
        color: #2196F3;
    }
 
-         .contact-link {
-             display: inline-flex;
-             align-items: center;
-             justify-content: center;
-             gap: 10px;
-             font-size: 14px;
-             line-height: 1.7;
-             color: var(--cover-text-color);
-             letter-spacing: 0.03em;
-             font-weight: 500;
-         }
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--cover-text-color);
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}

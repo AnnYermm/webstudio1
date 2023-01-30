@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <title>Студія</title>
   </head>
   <body id="page">
@@ -34,6 +34,23 @@
         <a href="./index.html" class="logo link header__logo"
           ><span class="web-logo">Web</span>Studio</a
         >
+        <button
+          type="button"
+          class="menu-btn"
+          aria-label="menu button"
+          data-menu-button
+        >
+          <svg width="40px" height="40px">
+            <use
+              class="menu-open-icon"
+              href="./images/icons/icomoon/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-close-icon"
+              href="./images/icons/icomoon/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
         <nav class="header__menu">
           <ul class="list-punkt header__nav-menu">
             <li class="header__menu-item">
@@ -240,7 +257,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="qualities-item">
+            <li class="qualities__item">
               <div class="qualities__icon-box">
                 <svg width="70px" height="70px">
                   <use
@@ -254,7 +271,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="qualities-item">
+            <li class="qualities__item">
               <div class="qualities__icon-box">
                 <svg width="70px" height="70px">
                   <use
@@ -268,7 +285,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="qualities-item">
+            <li class="qualities__item">
               <div class="qualities__icon-box">
                 <svg width="70px" height="70px">
                   <use
@@ -285,7 +302,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section goal-section">
         <div class="container">
           <h2 class="basic-heading">Чем мы занимаемся</h2>
           <ul class="photos-gal">
@@ -295,7 +312,16 @@
               data-aos-delay="350"
               data-text="Десктопные приложения"
             >
-              <img src="./images/box1.jpg" alt="робочий стіл" width="370" />
+              <img
+                srcset="
+                  ./images/adaptive/features-1.jpg    1x,
+                  ./images/adaptive/features-1@2x.jpg 2x
+                "
+                src="./images/adaptive/features-1.jpg"
+                alt="робочий стіл"
+                width="370"
+                height="294"
+              />
             </li>
             <li
               class="photos-gal__item"
@@ -304,9 +330,14 @@
               data-text="Мобильные приложения"
             >
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/adaptive/features-2.jpg    1x,
+                  ./images/adaptive/features-2@2x.jpg 2x
+                "
+                src="./images/adaptive/features-2.jpg"
                 alt="телефон у долонях"
                 width="370"
+                height="294"
               />
             </li>
             <li
@@ -316,9 +347,14 @@
               data-text="Дизайнерские решения"
             >
               <img
-                src="./images/box3.jpg"
+                srcset="
+                  ./images/adaptive/features-3.jpg    1x,
+                  ./images/adaptive/features-3@2x.jpg 2x
+                "
+                src="./images/adaptive/features-3.jpg"
                 alt="графічний планшет"
                 width="370"
+                height="294"
               />
             </li>
           </ul>
@@ -329,7 +365,33 @@
           <h2 class="basic-heading">Наша команда</h2>
           <ul class="workers">
             <li class="workers__block">
-              <img src="./images/img.jpg" alt="Игорь Демьяненко" width="270" />
+              <!--Дескриптор х-->
+              <!-- <img
+                srcset="
+                  ./images/adaptive/img-1-mob.jpg    1x,
+                  ./images/adaptive/img-1-mob@2x.jpg 2x
+                "
+                src="./images/adaptive/img-1-mob.jpg"
+                width="450px"
+                height="460px"
+                alt="Игорь Демьяненко"
+                class="workers__photo"
+              /> -->
+
+              <!--Дескриптор w-->
+              <img
+                srcset="
+                  ./images/adaptive/img-1-270.jpg 270w,
+                  ./images/adaptive/img-1-354.jpg 354w,
+                  ./images/adaptive/img-1-450.jpg 450w,
+                  ./images/adaptive/img-1-540.jpg 540w,
+                  ./images/adaptive/img-1-708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/adaptive/img-1-450.jpg"
+                alt="Игорь Демьяненко"
+                class="workers__photo"
+              />
               <h3 class="workers__name">Игорь Демьяненко</h3>
               <p class="workers__post">Product Designer</p>
               <ul class="workers__medias">
@@ -388,7 +450,19 @@
               </ul>
             </li>
             <li class="workers__block">
-              <img src="./images/img2.jpg" alt="Ольга Репина" width="270" />
+              <img
+                srcset="
+                  ./images/adaptive/img-2-270.jpg 270w,
+                  ./images/adaptive/img-2-354.jpg 354w,
+                  ./images/adaptive/img-2-450.jpg 450w,
+                  ./images/adaptive/img-2-540.jpg 540w,
+                  ./images/adaptive/img-2-708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/adaptive/img-2-450.jpg"
+                alt="Ольга Репина"
+                class="workers__photo"
+              />
               <h3 class="workers__name">Ольга Репина</h3>
               <p class="workers__post">Frontend Developer</p>
               <ul class="workers__medias">
@@ -447,7 +521,19 @@
               </ul>
             </li>
             <li class="workers__block">
-              <img src="./images/img3.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                srcset="
+                  ./images/adaptive/img-3-270.jpg 270w,
+                  ./images/adaptive/img-3-354.jpg 354w,
+                  ./images/adaptive/img-3-450.jpg 450w,
+                  ./images/adaptive/img-3-540.jpg 540w,
+                  ./images/adaptive/img-3-708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/adaptive/img-3-450.jpg"
+                alt="Николай Тарасов"
+                class="workers__photo"
+              />
               <h3 class="workers__name">Николай Тарасов</h3>
               <p class="workers__post">Marketing</p>
               <ul class="workers__medias">
@@ -506,7 +592,19 @@
               </ul>
             </li>
             <li class="workers__block">
-              <img src="./images/img4.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                srcset="
+                  ./images/adaptive/img-4-270.jpg 270w,
+                  ./images/adaptive/img-4-354.jpg 354w,
+                  ./images/adaptive/img-4-450.jpg 450w,
+                  ./images/adaptive/img-4-540.jpg 540w,
+                  ./images/adaptive/img-4-708.jpg 708w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./images/adaptive/img-4-450.jpg"
+                alt="Михаил Ермаков"
+                class="workers__photo"
+              />
 
               <h3 class="workers__name">Михаил Ермаков</h3>
               <p class="workers__post">UI Designer</p>
@@ -632,7 +730,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__info">
-        <div>
+        <div class="footer__address-box">
           <a href="./index.html" class="footer__logo link"
             ><span class="web-logo">Web</span>Studio</a
           >
@@ -722,6 +820,46 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-menu>
+      <div class="menu">
+        <ul class="menu-section">
+          <li class="menu-section__item">
+            <a href="./index.html" class="link menu-section__link">Студия</a>
+          </li>
+          <li class="menu-section__item">
+            <a href="./portfolio.html" class="link menu-section__link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="menu-section__item">
+            <a href="#" class="link menu-section__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="">
+          <ul class="menu-group">
+            <li class="menu-group__item">
+              <a href="tel:+380961111111" class="link menu-group__connect">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-group__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link menu-group__connect"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="menu-socials">
+          <a href="#" class="menu-socials__link link">Instagram</a>
+          <a href="#" class="menu-socials__link link">Twitter</a>
+          <a href="#" class="menu-socials__link link">Facebook</a>
+          <a href="#" class="menu-socials__link link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
     <!--Modal window-->
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
     <script src="./js/mask.js"></script>
@@ -729,5 +867,7 @@
     <script src="/js/aos.js"></script>
 
     <script src="./js/modal.js"></script>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

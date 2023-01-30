@@ -1,18 +1,57 @@
  .workers {
-     display: flex;
-     padding-top: 50px;
-     gap: 30px;
+    gap: 30px;
+    justify-content: center;
+
+    //breakpoint mobile
+        @media screen and (min-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+    
+        //breakpoint tablet
+        @media screen and (min-width: 768px) {
+            display: flex;
+                flex-wrap: wrap;
+            padding-top: 30px;
+        }
+    
+    
+        //breakpoint desktop
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            padding-top: 50px;
+        }
  }
 
  .workers__block {
-     width: calc((100% - 90px) / 4);
      background: #FFFFFF;
      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 0px 0px 4px 4px;
+
+    //breakpoint mobile
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        //breakpoint tablet
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+    
+        //breakpoint desktop
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
  }
 
  .workers__block:hover {
      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
+
+ .workers__photo {
+    width: 100%;
  }
 
  .workers__name {
@@ -40,7 +79,22 @@
     justify-content: center;
     margin-top: 16px;
     gap: 10px;
-    margin-bottom: 30px;
+
+    //breakpoint mobile
+        @media screen and (min-width: 480px) {
+            padding-bottom: 24px;
+        }
+    
+        //breakpoint tablet
+        @media screen and (min-width: 768px) {
+            padding-bottom: 24px;
+        }
+    
+    
+        //breakpoint desktop
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 30px;
+        }
 }
 
 .workers__medias-item {
